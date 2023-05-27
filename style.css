@@ -1,0 +1,352 @@
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    background-color:#121212;
+}
+/* Trabajaremos el header nav */
+.img-logo {
+    margin-left: 6vh;
+    width: 18vh;
+    height: 10vh;
+    object-fit: cover;
+    cursor: pointer;
+
+}
+#navbar {
+    overflow: hidden;
+    background-color: transparent;
+    transition: 0.7s;
+    position: fixed;    
+    width: 100%;
+    height: 100px;
+    z-index: 99;
+    color: white;
+     &.navbar a {
+        cursor: pointer;
+    }
+}
+
+#navbar .container{
+    width: 90%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    left: 0;
+    right: 0;
+    gap:3vh;
+    font-size: 0.9rem;
+    font-family:Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+
+#navbar a:active {
+    color:#ECE7E9;
+}
+#navbar a {
+    display:flex;
+    align-items:center;
+    color: inherit;
+
+}
+.nav-iconos {
+    display:flex;
+    gap:3vh;
+}
+header .nav-iconos {
+    position: relative;
+    left: 60vh;
+}
+#inicio {
+    margin-left: 3vh;
+}
+.banner {
+    background-image: url(./Imagenes/papel.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    object-fit: contain;
+    height: 448px;
+}
+.banner-contents {
+    margin-left: 30px;
+    padding-top: 140px;
+    height: 190px;
+}
+.banner-title {
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom:0.3rem;
+    cursor: pointer;
+}
+.banner-botton {
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vh;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    background-color: rgb(51, 51, 51,0.5);
+    font-size: 1rem;
+}
+.banner-botton:hover {
+    color: #000;
+    background-color: #e6e6e6;
+    transition: all 0.2s;
+}
+.banner--fadeBottom {
+    margin-top:8vh;
+    height: 7.4rem;
+    background-image: linear-gradient(180deg,transparent,rgba(160, 156, 156, 0.65),#121212);
+}
+/* Trabajaremos el main */
+/* First section */
+main {
+    margin-left:8vh;
+}
+h2 {
+    color:#ECE7E9;
+    padding-bottom:1vh;
+    cursor:pointer;
+}
+main .firstsection-contentimg {
+    display:grid;
+    grid-template-areas:
+    'firsth2'
+    'firstimg';
+}
+#first-h2 {
+    grid-area:firsth2;
+}
+
+.posters {
+    grid-area:firstimg;
+}
+.posters {
+    display: flex;
+    flex-direction: row;
+}
+/* Second section */
+main .Secondsection-contentimg {
+    display: grid;
+    grid-template-areas:
+    'secondh2'
+    'secondimg';
+}
+#second-h2 {
+    grid-area:secondh2;
+}
+#second-img { 
+ grid-area: secondimg;
+}
+#second-img {
+    display: flex;
+    flex-direction: row;
+}
+/* Third section */
+main .thirdsection-contentimg {
+    display: grid;
+    grid-template-areas:
+    'thirdh2'
+    'thirdimg';
+}
+#third-h2 {
+    grid-area:thirdh2;
+}
+#third-img {
+    grid-area: thirdimg;
+}
+#third-img div {
+    display: flex;
+    flex-direction: row;
+}
+/* Four section */
+main .foursection-contentimg {
+    display: grid;
+    grid-template-areas:
+    'fourh2'
+    'fourimg';
+}
+#four-h2 {
+    grid-area:fourh2;
+}
+#four-img {
+    grid-area: fourimg;
+}
+#four-img div {
+    display: flex;
+    flex-direction: row;
+}
+.firstsection-contentimg,
+.Secondsection-contentimg,
+.thirdsection-contentimg,
+.foursection-contentimg {
+    margin-top: 5vh;
+}
+#first-img,
+#second-img,
+#third-img,
+#four-img {
+    margin-top: 1vh;
+    margin-bottom:1vh;
+}
+.main-content .imagen:hover {
+    transform: scale(1.4);
+    cursor: pointer;
+}
+.main-content .imagen {
+    padding-right: 1vh;
+    border-radius: 1vh;
+    transition:transform 450ms;
+}
+.posters {
+    display: flex;
+    overflow-y:hidden;
+    overflow-x:scroll;  
+}
+.posters::-webkit-scrollbar {
+    display: none;
+}
+/* Trabajamos el footer */
+footer {
+    padding-top: 15vh;
+    color: #b3b3b3;
+    font-size: 1rem;
+    font-family:Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+.footer-div {
+    padding-left: 13vh;
+    display: flex;
+    gap: 4vh;
+}
+.footerdiv-members {
+    display: flex;
+    justify-content: space-evenly;
+}
+footer ul {
+    list-style-type: none;
+    padding-top: 3vh;
+}
+footer li {
+    padding-top: 1.5vh;
+    cursor: pointer;
+    width: 35vh;
+}
+li:hover {
+    text-decoration: underline;
+}
+.parrafo {
+    border: solid 1px #b3b3b3;
+    width: 22vh;
+    display: flex;
+    justify-content: center;
+    padding:6.5px;
+    cursor: pointer;
+    margin-left: 13vh;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+.parrafo:hover {
+    color: white;
+}
+
+/* Empezamos a usar media querys */
+@media  screen and (max-width: 1300px) {
+    body {
+        overflow-x: hidden;
+    }
+    header .nav-iconos {
+        position: relative;
+        left: 15vh;
+    }
+  }
+  @media  screen and (max-width: 1150px) {
+    header .nav-iconos {
+        position: relative;
+        left: 15vh;
+    }
+  }
+  @media  screen and (max-width: 1100px) {
+    header .nav-iconos {
+        position: relative;
+        left: 15vh;
+    }
+  }
+
+  @media  screen and (max-width: 970px) {
+    #navbar {
+        font-size:0.3rem;
+    }
+    .img-logo {
+        width: 15vh;
+        height: 8vh;
+    }
+    header .nav-iconos {
+        position: relative;
+        left: 15vh;
+    }
+    footer .footerdiv-members {
+        font-size: 0.5rem;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        margin-left: 10vh;
+    }
+    footer .footer-div {
+        padding-left:5vh;
+    }
+    .parrafo {
+        font-size: 0.5rem;
+        border: solid 1px #b3b3b3;
+        width: 13vh;
+        display: flex;
+        place-content: center;
+        padding:4px;
+        margin-left: 8vh;
+        margin-top: 4vh;
+        margin-bottom: 5vh;
+    }
+  }
+  @media  screen and (max-width: 400px) {
+    header .nav-iconos {
+        position: relative;
+        left: 20vh;
+    }
+    footer .footerdiv-members {
+        font-size: 0.5rem;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        margin-left: 25vh;
+    }
+    footer .footer-div {
+        padding-left:5vh;
+    }
+    .parrafo {
+        margin-left: 5vh;
+        margin-top: 4vh;
+        margin-bottom: 5vh;
+    }
+    .banner-title {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    .banner-botton {
+        cursor: pointer;
+        color: white;
+        outline: none;
+        border: none;
+        font-weight: 700;
+        border-radius: 0.2vh;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-right: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        background-color: rgb(51, 51, 51,0.5);
+        font-size: 0.5rem;
+    }
+  }
