@@ -12,7 +12,6 @@ body {
     height: 10vh;
     object-fit: cover;
     cursor: pointer;
-
 }
 #navbar {
     overflow: hidden;
@@ -27,7 +26,6 @@ body {
         cursor: pointer;
     }
 }
-
 #navbar .container{
     width: 90%;
     height: 100%;
@@ -38,8 +36,8 @@ body {
     gap:3vh;
     font-size: 0.9rem;
     font-family:Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    cursor: pointer;
 }
-
 #navbar a:active {
     color:#ECE7E9;
 }
@@ -47,7 +45,6 @@ body {
     display:flex;
     align-items:center;
     color: inherit;
-
 }
 .nav-iconos {
     display:flex;
@@ -57,7 +54,7 @@ header .nav-iconos {
     position: relative;
     left: 60vh;
 }
-#inicio {
+#start {
     margin-left: 3vh;
 }
 .banner {
@@ -123,7 +120,6 @@ main .firstsection-contentimg {
 #first-h2 {
     grid-area:firsth2;
 }
-
 .posters {
     grid-area:firstimg;
 }
@@ -254,7 +250,6 @@ li:hover {
 .parrafo:hover {
     color: white;
 }
-
 /* Empezamos a usar media querys */
 @media  screen and (max-width: 1300px) {
     body {
@@ -277,7 +272,6 @@ li:hover {
         left: 15vh;
     }
   }
-
   @media  screen and (max-width: 970px) {
     #navbar {
         font-size:0.3rem;
